@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Open Sourcery;
+    src: url("../assets/OpenSourceryRegular.otf") format('opentype');
+    font-style: normal;
+}
+
+.spacer{
+    height: 6.5rem;
+}
+
+/*----- NAVBAR -----*/
+.navbar{
+    border-bottom: 1px solid #eee;
+}
+ul.navbar-list{
+    list-style: none;
+}
+.navbar-item{
+    float: left;
+    margin-right: 35px;
+}
+
+/*---- COLORS -----*/
+.dark{
+    background-color: #38383b;
+    text-decoration-color: #eee;
+}
+.red{
+    background-color: #db2f27;
+}
+.yellow{
+    background-color: #e6c700;
+}
+.blue{
+    background-color: #008cbc;
+}
+.green{
+    background-color: #e6c700;
+}
+
+/*---- IFRAME -----*/
+.tiptext {
+    color:#069; 
+    cursor:pointer;
+}
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid #000;
+    width:400px;
+    height:400px;
+}
