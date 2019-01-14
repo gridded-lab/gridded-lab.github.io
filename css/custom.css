@@ -1,16 +1,47 @@
+/* ---- LINK ---- */
+a{
+    color:#4E8BB9;  
+}
+a:hover{
+    color:#42741B;
+}
+a:visited{
+    color:rgb(45, 79, 105);
+}
+
+/* ---- BUTTON ---- */
+a.button:visited{
+    color:#E1E3D8;
+}
+a.button:hover{
+    color:#42741B;
+}
+.button:hover{
+    color:#42741B;
+    background-color: transparent;
+    border: 1px solid #42741B;
+}
+
+
+/* ---- FONT ---- */
 @font-face {
     font-family: Open Sourcery;
     src: url("../assets/OpenSourceryRegular.otf") format('opentype');
     font-style: normal;
 }
 
+/* ---- SPACE ---- */
 .spacer{
     height: 6.5rem;
+}
+.block{
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 /*----- NAVBAR -----*/
 .navbar{
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #38383b;
 }
 ul.navbar-list{
     list-style: none;
@@ -23,30 +54,33 @@ ul.navbar-list{
 /*---- COLORS -----*/
 .dark{
     background-color: #38383b;
-    text-decoration-color: #eee;
+    color: #E1E3D8;
+}
+.light{
+    background-color: #E1E3D8;
 }
 .red{
-    background-color: #db2f27;
+    background-color: #BD332C;
 }
 .yellow{
-    background-color: #e6c700;
+    background-color: #DDC62E;
 }
 .blue{
-    background-color: #008cbc;
+    background-color: #4E8BB9;
 }
 .green{
-    background-color: #e6c700;
+    background-color: #42741B;
 }
 
 /*---- IFRAME -----*/
 .tiptext {
-    color:#069; 
+    color:#4E8BB9; 
     cursor:pointer;
 }
 .description {
     display:none;
     position:absolute;
-    border:1px solid #000;
+    border:1px solid #42741B;
     width:400px;
     height:400px;
 }

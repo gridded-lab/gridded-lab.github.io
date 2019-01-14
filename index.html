@@ -32,11 +32,10 @@
   <script src="custom.js"></script>
 
 </head>
-<body>
+<body class="light">
 
   <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="block">  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
   <div class="spacer"></div>
     <nav class="navbar">
         <div class="container">
@@ -46,15 +45,14 @@
           </ul>
         </div>
     </nav>
-  </div>
 
-  <div class="block">
+  <div class="block" id="grid-lab">
     <div class="container">
-      <div class="row" id="grid-lab">
-        <div class="four columns" style="margin-top: 25%">
+      <div class="row">
+        <div class="four columns">
             <img src="assets/branding/gridlab_ico.png" style="width:100px;height:100px;">
         </div>
-        <div class="eight columns" style="margin-top: 25%">
+        <div class="eight columns">
           <h2>grid-lab is currently in the works!</h2>
           <p>An informal cooperative between designers, illustrators, and creatives with a focus of how creative work evolves through rules and openess.</p>
         </div>
@@ -62,29 +60,31 @@
     </div>
   </div>
   
-  <div class="block">
+  <div class="block" id="slack">
     <div class="container">
-      <div class="row" id="slack">
-        <div class="four columns" style="margin-top: 25%">
+      <div class="row">
+        <div class="four columns">
         </div>
-        <div class="eight columns" style="margin-top: 25%">
+        <div class="eight columns u-pull-right">
           <h2>Join our Slack</h2>
           <p>You're welcome to join our Slack, we'd love your input.</p>
-          <a class="button button-primary" href="https://join.slack.com/t/grid-lab/shared_invite/enQtNTIwMTIyOTAwOTY0LTgzYzFjYTI4ZGJkOGIxOTIwZjgxMzEzN2I5MjUwNjVkYzA0YzkzMWQ0YTg5MDg3NDliMjY2YWYyYmVmYzliNGI">Join Slack</a>
+          <a class="button dark" href="https://join.slack.com/t/grid-lab/shared_invite/enQtNTIwMTIyOTAwOTY0LTgzYzFjYTI4ZGJkOGIxOTIwZjgxMzEzN2I5MjUwNjVkYzA0YzkzMWQ0YTg5MDg3NDliMjY2YWYyYmVmYzliNGI">Join Slack</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="block">
+<hr style="border: 1px solid #38383b">
+<div class="block" id="resources">
     <div class="container">
-      <div class="row" id="resources">
-        <div class="four columns" style="margin-top: 15%">
+      <div class="row">
+        <div class="four columns">
           <h2>resources</h2>
         </div>
-        <div class="four columns" style="margin-top: 15%">
-          <ol>
-            <h4>colors</h4>
+<!-- LEFT COLUMN -->
+        <div class="four columns">
+          <ul>
+            <h4 id="colors">colors</h4>
             <li>
               <a href="http://paletton.com/" class="tiptext">Paletton
                 <iframe class="description" src="http://paletton.com/"></iframe>
@@ -95,18 +95,48 @@
                   <iframe class="description" src="http://www.colourlovers.com/"></iframe>
                 </a>
             </li>
-            <hr>
-            <h4>music</h4>
+            <hr style="border: 1px solid #38383b">
+            <h4 id="music">music</h4>
             <li>
                 <a href="https://www.marmosetmusic.com/" class="tiptext">Marmoset Music
                   <iframe class="description" src="https://www.marmosetmusic.com/"></iframe>
                 </a>
               </li>
-          </ol>
+            <hr style="border: 1px solid #38383b">
+            <h4 id="print">print</h4>
+            <li>
+              <a href="http://us.moo.com/" class="tiptext">Moo
+                <iframe class="description" src="http://us.moo.com/"></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.spoonflower.com/welcome" class="tiptext">Spoon Flower
+                <iframe class="description" src="http://www.spoonflower.com/welcome"></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.zazzle.com/" class="tiptext">Zazzle
+                <iframe class="description" src="http://www.zazzle.com/"></iframe>
+              </a>
+            </li>
+            <h5>paper</h5>
+            <li>
+              <a href="https://www.mohawkconnects.com/" class="tiptext">Mohawk
+                <iframe class="description" src="https://www.mohawkconnects.com/"></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.frenchpaper.com/" class="tiptext">French
+                <iframe class="description" src="https://www.frenchpaper.com/"></iframe>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="four columns" style="margin-top: 15%">
-            <ol>
-              <h4>photography</h4>
+<!-- RIGHT COLUMN -->
+        <div class="four columns">
+            <hr style="border: 1px solid #38383b">
+            <ul>
+              <h4 id="photography">photography</h4>
               <li>
                 <a href="https://www.pexels.com/" class="tiptext">Pexels
                   <iframe class="description" src="https://www.pexels.com/"></iframe>
@@ -132,7 +162,50 @@
                     <iframe class="description" src="https://www.rawpixel.com/"></iframe>
                   </a>
               </li>
-            </ol>
+              <hr style="border: 1px solid #38383b">
+              <h4 id="development">development</h4>
+              <li>
+                <a href="https://github.com/" class="tiptext">GitHub
+                  <iframe class="description" src="https://github.com/"></iframe>
+                </a>
+              </li>
+              <li>
+                  <a href="https://about.gitlab.com/" class="tiptext">GitLab
+                    <iframe class="description" src="https://about.gitlab.com/"></iframe>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://inclusive-components.design/" class="tiptext">Inclusive Components
+                    <iframe class="description" src="https://inclusive-components.design/"></iframe>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://codesandbox.io/" class="tiptext">Code Sand Box
+                    <iframe class="description" src="https://codesandbox.io/"></iframe>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://glitch.com/" class="tiptext">Glitch
+                    <iframe class="description" src="https://glitch.com/"></iframe>
+                  </a>
+              </li>
+              <h5>software</h5>
+              <li>
+                <a href="https://atom.io/" class="tiptext">Atom
+                  <iframe class="description" src="https://atom.io/"></iframe>
+                </a>
+            </li>
+            <li>
+                <a href="https://code.visualstudio.com/" class="tiptext">Visual Studio
+                  <iframe class="description" src="https://code.visualstudio.com/"></iframe>
+                </a>
+            </li>
+            <li>
+                <a href="http://brackets.io/" class="tiptext">Brackets
+                  <iframe class="description" src="http://brackets.io/"></iframe>
+                </a>
+            </li>
+            </ul>
           </div>
       </div>
     </div>
