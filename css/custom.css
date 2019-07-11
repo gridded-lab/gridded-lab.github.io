@@ -29,6 +29,9 @@ a.button:hover{
     background-color: transparent;
     border: 1px solid #42741B;
 }
+.git{
+    float: right;
+}
 
 
 /* ---- FONT ---- */
